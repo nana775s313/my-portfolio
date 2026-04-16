@@ -16,8 +16,8 @@ body {
 ===================== */
 header {
   background-color: #ffffff;
-  padding: 20px;
-  text-align: center;
+  padding: 30px 20px;
+  text-align: center; /* ← これ重要 */
   border-bottom: 1px solid #ddd;
 }
 
