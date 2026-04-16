@@ -1,0 +1,239 @@
+HTML
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ナナのポートフォリオ</title>
+  <style>
+    /* 1. 全体の設定（リセットと基本） */
+    * { box-sizing: border-box; } /* 余白の計算を楽にする */
+    body {
+      font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+      margin: 0;
+      line-height: 1.8;
+      color: #555;
+      background-color: #f9f9f9; /* 薄いグレーの背景で落ち着いた印象に */
+    }
+
+    /* 2. ナビゲーションメニュー */
+    nav {
+      background: rgba(255, 255, 255, 0.9); /* 少し透ける白 */
+      position: sticky; /* スクロールしても上についてくる */
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li a {
+      display: block;
+      padding: 15px 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #007bff; /* マウスを乗せると青くなる */
+    }
+
+    /* 3. ヘッダー */
+    header {
+      background: linear-gradient(135deg, #555); /* グラデーションでおしゃれに */
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    header h1 { margin: 0; font-size: 2.5rem; letter-spacing: 2px; }
+    header p { margin: 10px 0 0; opacity: 0.8; }
+
+    /* 4. セクション共通 */
+    section {
+      padding: 80px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 40px;
+      position: relative;
+    }
+    h2::after { /* 見出しの下に短い線を引く */
+      content: "";
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: #007bff;
+      margin: 15px auto 0;
+    }
+
+    /* Aboutの文章を整える */
+    #about p {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    }
+
+    /* 5. Works（横並び） */
+    .works-container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .work {
+      flex: 1;
+      min-width: 280px;
+      max-width: 400px;
+      background: white;
+      padding: 15px;
+      border-radius: 12px;
+      transition: transform 0.3s; /* 動く演出 */
+    }
+    .work:hover {
+      transform: translateY(-5px); /* マウスを乗せると少し浮く */
+    }
+    .work img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+    .work p {
+      margin: 15px 0 5px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    /* 6. お問い合わせ & フッター */
+    #contact { text-align: center; }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#works">Works</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header>
+  <h1>ナナのポートフォリオ</h1>
+  <p>Webデザイナー</p>
+</header>
+
+<section id="about">
+  <h2>About</h2>
+  <p>はじめまして。Webデザイナーのナナです。<br><br>
+  現在は、ユーザーにとって「見やすく・分かりやすく・行動しやすい」デザインを意識しながら、Webサイト制作を行っています。<br>
+  これまでに架空サイトやバナー制作を通じて、ターゲットに合わせたデザイン設計や情報整理を意識してきました。<br><br>
+  丁寧なコミュニケーション力を活かし、クライアント様の意図をしっかり汲み取りながら、目的に沿ったデザインをご提案いたします。<br>
+  一つひとつのご依頼に誠実に向き合い、安心してお任せいただけるよう努めてまいります。</p>
+</section>
+
+<section id="works">
+  <h2>Works</h2>
+
+  <div class="works-container">
+
+    <div class="work">
+  <img src="natsukou.png" alt="natsukou">
+  <p class="work-title">夏期講習 バナー制作</p>
+  <p class="work-detail">■ 使用ツール Photoshop</p>
+  <p class="work-detail">■ 制作時間 約3時間</p>
+  <a href="Untitled-1.html">詳細ページへジャンプする</a>
+</div>
+
+    <div class="work">
+  <img src="Web.png" alt="Web">
+  <p class="work-title">Webデザイン講座バナー制作</p>
+  <p class="work-detail">■ 使用ツール Photoshop</p>
+  <p class="work-detail">■ 制作時間 約4時間</p>
+  <a href="Untitled-2.html">詳細ページへジャンプする</a>
+</div>
+
+    <div class="work">
+  <img src="tensyoku.png" alt="tensyoku">
+  <p class="work-title">転職サイトバナー制作</p>
+  <p class="work-detail">■ 使用ツール Photoshop</p>
+  <p class="work-detail">■ 制作時間 約3時間</p>
+  <a href="Untitled-3.html">詳細ページへジャンプする</a>
+</div>
+
+    <div class="work">
+  <img src="summer sale.png" alt="summer sale">
+  <p class="work-title">サマーセールバナー制作</p>
+  <p class="work-detail">■ 使用ツール Photoshop</p>
+  <p class="work-detail">■ 制作時間 約4時間</p>
+  <a href="Untitled-4.html">詳細ページへジャンプする</a>
+</div>
+
+    <div class="work">
+  <img src="ichigolatte.png" alt="ichigolatte">
+  <p class="work-title">新商品バナー制作</p>
+  <p class="work-detail">■ 使用ツール Photoshop</p>
+  <p class="work-detail">■ 制作時間 約4時間</p>
+  <a href="Untitled-5.html">詳細ページへジャンプする</a>
+</div>
+
+    <div class="work">
+  <img src="gym.png" alt="gym">
+  <p class="work-title">フィットネスジム宣伝バナー制作</p>
+  <p class="work-detail">■ 使用ツール Photoshop</p>
+  <p class="work-detail">■ 制作時間 約5時間</p>
+  <a href="Untitled-6.html">詳細ページへジャンプする</a>
+</div>
+
+    <div class="work">
+  <img src="onsen.png" alt="温泉旅館バナー">
+  <p class="work-title">温泉旅館集客バナー制作</p>
+  <p class="work-detail">■ 使用ツール Photoshop</p>
+  <p class="work-detail">■ 制作時間 約4時間</p>
+  <a href="Untitled-7.html">詳細ページへジャンプする</a>
+</div>
+
+    <div class="work">
+  <img src="ruminasu.png" alt="水族館バナー">
+  <p class="work-title">水族館集客バナー制作</p>
+  <p class="work-detail">■ 使用ツール Photoshop</p>
+  <p class="work-detail">■ 制作時間 約3時間</p>
+  <a href="Untitled-8.html">詳細ページへジャンプする</a>
+</div>
+
+  <div class="work">
+  <img src="moco pet salpn.png" alt="moco pet salonバナー">
+  <p class="work-title">トリミングサロンバナー制作</p>
+  <p class="work-detail">■ 使用ツール Photoshop</p>
+  <p class="work-detail">■ 制作時間 約3時間</p>
+  <a href="Untitled-9.html">詳細ページへジャンプする</a>
+</div>
+  </div> </section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>お問い合わせはメールにてお気軽にどうぞ</p>
+  <a href="mailto:your-email@example.com" style="color: #007bff; text-decoration: none; font-weight: bold;">mail-address@example.com</a>
+</section>
+
+<footer>
+  <p>&copy; 2026 ナナのポートフォリオ All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
