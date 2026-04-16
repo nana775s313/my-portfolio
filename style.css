@@ -70,3 +70,10 @@ li {
 .back-btn:hover {
   background-color: #5aaee6;
 }
+
+.work-detail img {
+  width: 600px;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
