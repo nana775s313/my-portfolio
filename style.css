@@ -1,79 +1,96 @@
 @charset "utf-8";
 
-/* =========================
-  全体設定
-========================= */
+/* =====================
+   全体設定
+===================== */
 body {
-  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #f8f9fb;
+  line-height: 1.8;
   color: #333;
-  line-height: 1.7;
+  background-color: #f9f9f9;
 }
 
-/* =========================
-  セクション
-========================= */
+/* =====================
+   ヘッダー
+===================== */
+header {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* =====================
+   セクション
+===================== */
 .work-detail {
-  max-width: 800px;
-  margin: 60px auto;
-  padding: 40px;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-/* =========================
-  見出し
-========================= */
-h2 {
-  font-size: 20px;
-  margin-bottom: 16px;
+/* =====================
+   画像
+===================== */
+.work-detail img {
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* =====================
+   テキスト
+===================== */
+.detail-text {
+  margin-top: 30px;
+}
+
+.detail-text h2 {
+  font-size: 18px;
+  margin-top: 30px;
   border-left: 4px solid #7dc6f9;
   padding-left: 10px;
 }
 
-/* =========================
-  テキスト
-========================= */
-p {
-  margin-bottom: 24px;
+.detail-text p {
+  margin: 10px 0;
 }
 
-/* =========================
-  リスト
-========================= */
-ul {
+.detail-text ul {
   padding-left: 20px;
-  margin-bottom: 24px;
 }
 
-li {
+.detail-text li {
   margin-bottom: 8px;
 }
 
-/* =========================
-  戻るボタン
-========================= */
+/* =====================
+   戻るボタン
+===================== */
 .back-btn {
   display: inline-block;
   margin-top: 30px;
-  padding: 12px 20px;
+  padding: 10px 20px;
   background-color: #7dc6f9;
   color: #fff;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 5px;
   transition: 0.3s;
 }
 
 .back-btn:hover {
   background-color: #5aaee6;
-}
-
-.work-detail img {
-  width: 600px;
-  max-width: 100%;
-  display: block;
-  margin: 0 auto;
 }
